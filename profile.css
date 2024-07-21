@@ -69,14 +69,12 @@ h1{
 }
 .container {
     display: flex;
-    /* อีลีเมนต์ต่างๆในกล่องนี้จะมีทิศทางเดียว คือจากบนลงล่าง */
     flex-direction: column;
     color: #fff;
-    font-weight: bold;
     text-align: center;
 }
   
-.img,.main,.footer {
+.img, .main, .skills, .hobby {
     margin: 1%;
 }
 .content {
@@ -95,10 +93,29 @@ h6{
     color: aliceblue;
     font-size: 20px;
 }
+h6#S,#H{
+    color: aliceblue;
+    font-size: 20px;
+    text-decoration: underline 1px #5EF43F;
+}
 p{
     color: aliceblue;
     font-size: 16px;
     text-align: left;
+}
+p#I{
+    color: aliceblue;
+    font-size: 12px;
+    text-align: left;
+    animation: float 5s ease-in-out infinite;
+}
+@keyframes float {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(8px); /* ปรับค่า translateY ตามทิศทางต้องการ */
+  }
 }
   
 .img {
@@ -109,8 +126,13 @@ p{
     border-radius: 10px;
 }
   
-.footer {
-    background: #d770ad;
+.skills {
+    flex: 1.7;
+    margin-bottom: 0;
+}
+.hobby{
+    flex: 1;
+    margin-bottom: 0;
 }
 hr {
     border: solid 1px #5EF43F;
@@ -127,6 +149,14 @@ hr {
         margin: 0 auto;
     }
     .main h6{
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    .skills h6#S{
+        font-size: 16px;
+        margin: 0 auto;
+    }
+    .hobby h6#H{
         font-size: 16px;
         margin: 0 auto;
     }
