@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    font-family: Prompt;
+}
+
+.hamburger {
+    font-size: 1.2em; /* ขนาดของไอคอน */
+    vertical-align: middle; /* จัดกึ่งกลางตามแนวตั้ง */
+    display: inline-block; /* แสดงเป็นบล็อกในบรรทัดเดียวกับข้อความ */
+    margin-left: 5px; /* ระยะห่างด้านซ้าย */
+}
+/*ลักษณะปุ่ม*/
+.dropbtn {
+    top: 0;
+    background-color: #333;
+    color: white;
+    padding: 16px;
+    font-size: 2em;
+    border: none;
+    cursor: pointer;
+}
+  
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: fixed; /* ปรับตำแหน่งเป็น fixed */
+    top: 0; /* ยึดติดที่ด้านบน */
+    left: 0; /* ยึดติดที่ด้านซ้าย */
+    display: inline-block;
+}
+  
+/* Dropdown Content (Hidden by Default) ลักษณะตอนดรอปดาวน์ */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1; /* ทำให้เมนูอยู่ด้านบนสุด */
+}
+  
+/* Links inside the dropdown ลักษณะตัวอักษร */
+.dropdown-content a {
+    color: black;
+    font-size: .7em;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+  
+/* เปลียนสีตอน hover */
+.dropdown-content a:hover {background-color: #5EF43F; color: #111;}
+  
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+  
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: #333;
+}
+
+h1{
+    font-size: 52px;
+    text-align: center;
+    color: #5EF43F;
+    text-decoration: underline 2px;
+    text-decoration: color(#5EF43F);
+}
+
+.content{
+    width: 92%;
+    margin: 0 auto;
+    border: solid 2px #5EF43F;
+    border-radius: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 5px 30px 0px rgb(113, 255, 18);
+}
+.content p {
+    font-size: 16px;
+    text-indent: 25px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding: 5px;
+    color: aliceblue;
+}
+@media (max-width: 450px){
+    h1 {
+        font-size: 32px;
+        margin-top: 19%;
+    }
+    .content p {
+        font-size: 12px;
+    }
+}
