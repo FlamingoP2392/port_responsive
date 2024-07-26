@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="education.css">
+    <title>Portfolio_Responsive Test</title>
+</head>
+<body>
+    <div class="dropdown">
+        <button class="dropbtn"><span class="hamburger">&#9776;</span></button>
+        <div class="dropdown-content">
+            <a href="index.html">Home</a>
+            <a href="sop.html">SOP</a>
+            <a href="profile.html">Profile</a>
+            <a href="education.html">Educations</a>
+            <a href="#">Activities</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+    <h1>EDUCATIONS</h1>
+    <div class="container">
+        <div class="block">
+            <div class="logo">
+                <img src="รวมภาพใส่พอร์ต/คราห้วยแห้ง.jpg">
+            </div>
+            <div class="educate">
+                <h6>ระดับประถมศึกษา</h6>
+                <p>โรงเรียนวัดห้วยแห้ง</p>
+                <p id="g">เกรดเฉลี่ยรวม : 3.97</p>
+            </div>
+            <div class="tran">
+                <button class="slideButton" data-index ="1">Transcript</button>
+                <div class="transcript" id="transcript1">
+                    <div class="transcript-content">
+                        <embed src="certificate/ป6หน้า.jpg" width="100%" height="100%"/>
+                        <embed src="certificate/ป6หลัง.jpg" width="100%" height="100%"/>
+                    </div>
+                    <button class="closeButton" data-index ="1">&times;</button>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="logo">
+                <img src="รวมภาพใส่พอร์ต/คราห้วยแห้ง.jpg">
+            </div>
+            <div class="educate">
+                <h6>ระดับมัธยมศึกษาตอนต้น</h6>
+                <p>โรงเรียนวัดห้วยแห้ง</p>
+                <p id="g">เกรดเฉลี่ยรวม : 3.85</p>
+            </div>
+            <div class="tran">
+                <button class="slideButton" data-index ="2">Transcript</button>
+                <div class="transcript" id="transcript2">
+                    <div class="transcript-content">
+                        <embed src="certificate/ม3หน้า.jpg" width="100%" height="100%"/>
+                        <embed src="certificate/ม3หลัง.jpg" width="100%" height="100%"/>
+                    </div>
+                    <button class="closeButton" data-index ="2">&times;</button>
+                </div>
+            </div>
+        </div>
+        <div class="block">
+            <div class="logo">
+                <img id="utcc" src="รวมภาพใส่พอร์ต/คราวิทลัย.jpg">
+            </div>
+            <div class="educate">
+                <h6>ระดับประกาศนียบัตรวิชาชีพและประกาศนียบัตรวิชาชีพชั้นสูง</h6>
+                <p>สาขาวิขาเทคโนโลยีสารสนเทศ<br>วิทยาลัยชุมชนอุทัยธานี</p>
+                <p id="g">เกรดเฉลี่ยรวม(ปวช.) : 3.92</p>
+                <p id="g">เกรดเฉลี่ย 2 เทอม(ปวส.) : ...</p>
+            </div>
+            <div class="tran">
+                <button class="slideButton" data-index ="3">Transcript</button>
+                <div class="transcript" id="transcript3">
+                    <div class="transcript-content">
+                        <embed src="certificate/ปวชหน้า.jpg" width="100%" height="100%"/>
+                        <embed src="certificate/ปวชหลัง.jpg" width="100%" height="100%"/>
+                        <embed src="path/to/your/pdf3.pdf" width="100%" height="100%"/>
+                    </div>
+                    <button class="closeButton" data-index ="3">&times;</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="block">
+            <div class="logo">
+                <img id="ru" src="รวมภาพใส่พอร์ต/ราม.png">
+            </div>
+            <div class="educate">
+                <h6>หลักสูตร Pre-Degree <br>เทียบโอนปริญญาครี</h6>
+                <p>คณะบริหารธุรกิจ สาขาวิชาการจัดการ</p>
+                <p id="g">ปัจจุบันเก็บหน่วยกิตได้ 125 หน่วยกิต</p>
+            </div>
+            <div class="tran">
+                <button class="slideButton" data-index ="4">Transcript</button>
+                <div class="transcript" id="transcript4">
+                    <div class="transcript-content">
+                        
+                        <embed src="path/to/your/pdf3.pdf" width="100%" height="100%"/>
+                    </div>
+                    <button class="closeButton" data-index ="4">&times;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
