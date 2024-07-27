@@ -67,31 +67,66 @@ h1 {
 
 .container {
     display: flex;
+    /* อีลีเมนต์ต่างๆในกล่องนี้จะมีทิศทางเดียว คือจากบนลงล่าง */
     flex-direction: column;
-    width: 100%;
-    align-items: center;
+    color: #fff;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+.header,.sideL,.sideR,.footer {
+    margin: 0;
 }
-.block {
+  
+.content {
+    display: flex;/*ในขณะที่ sideL และ sideR ที่อยู่ในกล่องใบที่สองนี้จะมีทิศทางจากซ้ายไปขวา*/
+    flex-direction: row;
+}
+  
+.header {
+    grid-column: 1;
+}
+.header img{
+    width: 80%;
+    border: solid 2px #5EF43F;
+    border-radius: 25px;
+    text-align: center;
+    margin-top: 0;
+}
+  
+.sideR {
+    flex: 2;
+    text-align: center;
+}
+  
+.sideL {
+    flex: 2;
+    text-align: center;
+}
+.sideL img, .sideR img{
+    width: 50%;
     display: flex;
-    width: 100%;
-    justify-content:space-between;
-    margin-bottom: 1em;
-}
-.contentmain {
-    width: 100%;
+    border: solid 2px #5EF43F;
+    border-radius: 25px;
     text-align: center;
-    justify-content: center;
+    margin: 0 auto;
 }
-.contentL{
-    width: 50%;
+  
+.footer {
     text-align: center;
-    margin: 3%;
+    margin-top: 0.5em;
 }
-.contentR{
-    width: 50%;
-    text-align: center;
-    margin: 3%;
+.footer p{
+    font-size: 16px;
+    color: aliceblue;
+    margin-top: 0;
+    text-align: left;
+    text-indent: 10%;
+    box-sizing: border-box;
+    margin-left: 5%;
+    margin-right: 5%;
 }
+
 h6{
     font-size: 18px;
     color: aliceblue;
@@ -99,18 +134,10 @@ h6{
     margin-top: 0;
     margin-bottom: 5px;
 }
-p{
-    font-size: 16px;
-    color: aliceblue;
-    text-align: center;
+hr {
+    border: solid 1px #5EF43F;
+    width: 80%;
     margin-top: 0;
-}
-img {
-    width: 90%;
-    height: 150px;
-    border: solid 2px #5EF43F;
-    border-radius: 25px;
-    text-align: center;
 }
 
 @media (max-width: 450px){
@@ -119,9 +146,20 @@ img {
         margin-top: 10%;
     }
     h6{
-        font-size: 16px;
+        font-size: 14px;
+        margin-left: 10%;
+        margin-right: 10%;
+        box-sizing: border-box;
     }
-    p{
+    .footer p{
         font-size: 12px;
+    }
+    .header img{
+        width: 300px;
+        height: 210px;
+    }
+    .sideL img, .sideR img{
+        width: 140px;
+        height: 90px;
     }
 }
