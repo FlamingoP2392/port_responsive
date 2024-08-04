@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #404a3c;
     font-family: Prompt;
 }
 
@@ -14,7 +14,7 @@ body {
 /*ลักษณะปุ่ม*/
 .dropbtn {
     top: 0;
-    background-color: #333;
+    background-color: transparent;
     color: white;
     padding: 16px;
     font-size: 2em;
@@ -50,7 +50,7 @@ body {
 }
   
 /* เปลียนสีตอน hover */
-.dropdown-content a:hover {background-color: #5EF43F; color: #111;}
+.dropdown-content a:hover {background-color: #a3af9e; color: #111;}
   
 /* Show the dropdown menu on hover */
 .dropdown:hover .dropdown-content {
@@ -85,7 +85,7 @@ h1{
 }
 .contentname h6 {
     font-size: 26px;
-    color: #5EF43F;
+    color: #a3af9e;
     text-align: center;
     margin-top: 2%;
     overflow: hidden;
@@ -107,7 +107,7 @@ h1{
 }
 .contentname p {
     font-size: 18px;
-    color: #5EF43F;
+    color: #a3af9e;
     text-align: center;
     margin-top: 0;
     animation: float 3s ease-in-out infinite; /* เพิ่มอนิเมชั่นให้ไอคอน */
@@ -142,7 +142,6 @@ h1{
     }
     .contentname h6 {
         font-size: 26px;
-        color: #5EF43F;
         text-align: center;
         margin-top: 2%;
     }

@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: #333;
+    background-color: #404a3c;
     font-family: 'Prompt', sans-serif;
 }
 
@@ -14,7 +14,7 @@ body {
 
 .dropbtn {
     top: 0;
-    background-color: #333;
+    background-color: transparent;
     color: white;
     padding: 16px;
     font-size: 2em;
@@ -47,7 +47,7 @@ body {
 }
 
 .dropdown-content a:hover {
-    background-color: #5EF43F;
+    background-color: #a3af9e;
     color: #111;
 }
 
@@ -62,7 +62,7 @@ body {
 h1 {
     font-size: 52px;
     text-align: center;
-    color: #5EF43F;
+    color: #00d9ff;
 }
 
 .container {
@@ -95,16 +95,16 @@ h1 {
 }
   
 .sideR {
-    flex: 2;
+    flex: 1;
     text-align: center;
 }
   
 .sideL {
-    flex: 2;
+    flex: 1;
     text-align: center;
 }
 .sideL img, .sideR img{
-    width: 50%;
+    width: 60%;
     display: flex;
     border: solid 2px #5EF43F;
     border-radius: 25px;
@@ -135,7 +135,7 @@ h6{
     margin-bottom: 5px;
 }
 hr {
-    border: solid 1px #5EF43F;
+    border: solid 1px #a3af9e;
     width: 80%;
     margin-top: 0;
 }
@@ -152,14 +152,14 @@ hr {
         box-sizing: border-box;
     }
     .footer p{
-        font-size: 12px;
+        font-size: 10px;
     }
     .header img{
         width: 300px;
-        height: 210px;
+        height: auto;
     }
     .sideL img, .sideR img{
-        width: 140px;
+        width: 70%;
         height: 90px;
     }
 }
