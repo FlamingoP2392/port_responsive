@@ -65,7 +65,7 @@ h1{
     font-size: 52px;
     text-align: center;
     margin-top: 10%;
-    color: #5EF43F;
+    color: #00d9ff;
 }
 
 .content{
@@ -85,7 +85,7 @@ h1{
 }
 .contentname h6 {
     font-size: 26px;
-    color: #a3af9e;
+    color: #5EF43F;;
     text-align: center;
     margin-top: 2%;
     overflow: hidden;
