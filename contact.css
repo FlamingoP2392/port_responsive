@@ -78,24 +78,54 @@ p{
     margin-right: 5%;
     box-sizing: border-box;
 }
-hr {
-    border: solid 1px #a3af9e;
-    width: 80%;
+a {
+    font-size: 16px;
+    color: aliceblue;
+    margin-left: 5%;
     margin-top: 0;
-}
-img{
-    width: 100%;
+    display: inline-flex;
+    align-items: center;
+    vertical-align: middle;
 }
 
-@media (max-width: 450px){
-    h1{
+img {
+    width: 50px;
+    margin-left: 5%;
+    margin-right: 10px; /* เพิ่มระยะห่างระหว่างภาพและข้อความ */
+}
+
+/* จัดการขนาดของภาพแต่ละตัว */
+img#f {
+    width: 70px;
+    margin-left: 4%;
+}
+
+img#l {
+    width: 80px;
+    margin-left: 3.7%;
+}
+
+img#ig {
+    width: 60px;
+    margin-left: 4.7%;
+}
+
+/* จัดการ responsive */
+@media (max-width: 450px) {
+    h1 {
         font-size: 32px;
         margin-top: 10%;
     }
-    h6{
+
+    h6 {
         font-size: 14px;
     }
-    p{
+
+    p {
+        font-size: 12px;
+    }
+
+    a {
         font-size: 12px;
     }
 }
