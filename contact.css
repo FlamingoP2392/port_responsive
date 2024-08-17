@@ -63,3 +63,39 @@ h1 {
     text-align: center;
     color: #00d9ff;
 }
+h6{
+    font-size: 18px;
+    color: aliceblue;
+    margin-left: 5%;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+p{
+    font-size: 16px;
+    color: aliceblue;
+    margin-left: 5%;
+    text-indent: 5%;
+    margin-right: 5%;
+    box-sizing: border-box;
+}
+hr {
+    border: solid 1px #a3af9e;
+    width: 80%;
+    margin-top: 0;
+}
+img{
+    width: 100%;
+}
+
+@media (max-width: 450px){
+    h1{
+        font-size: 32px;
+        margin-top: 10%;
+    }
+    h6{
+        font-size: 14px;
+    }
+    p{
+        font-size: 12px;
+    }
+}
