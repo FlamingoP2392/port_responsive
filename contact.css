@@ -87,10 +87,33 @@ a {
     align-items: center;
     vertical-align: middle;
 }
+hr {
+    border: solid 1px #a3af9e;
+    width: 80%;
+    margin-top: 0;
+}
+
+.block {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 1.2em;
+}
+.logo{
+    width: 20%;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.con{
+    width: 70%;
+    display: flex;
+    flex: 1;
+    justify-content: start;
+}
 
 img {
     width: 50px;
-    margin-left: 5%;
     margin-right: 10px; /* เพิ่มระยะห่างระหว่างภาพและข้อความ */
 }
 
